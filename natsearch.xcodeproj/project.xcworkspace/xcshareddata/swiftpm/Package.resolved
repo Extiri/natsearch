@@ -1,0 +1,33 @@
+{
+  "originHash" : "38f9dfedf0208db3d77c29bac30f617687cce8e7450ec40bcb5b5aa16da0ef4b",
+  "pins" : [
+    {
+      "identity" : "chalk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mxcl/Chalk",
+      "state" : {
+        "revision" : "a7f58e47a08ca5a84f73acc4bcf6c2c19d990609",
+        "version" : "0.5.0"
+      }
+    },
+    {
+      "identity" : "similarity-search-kit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ZachNagengast/similarity-search-kit.git",
+      "state" : {
+        "revision" : "9bec54706c8124bb9b20a3a06d566066a9f55712",
+        "version" : "0.0.15"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "0fbc8848e389af3bb55c182bc19ca9d5dc2f255b",
+        "version" : "1.4.0"
+      }
+    }
+  ],
+  "version" : 3
+}

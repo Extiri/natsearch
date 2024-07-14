@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D0E53D72C443FE400858CB8 /* WalkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E53CF2C443FE400858CB8 /* WalkingManager.swift */; };
+		6D0E53D82C443FE400858CB8 /* natsearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E53D02C443FE400858CB8 /* natsearch.swift */; };
+		6D0E53D92C443FE400858CB8 /* SemanticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E53D12C443FE400858CB8 /* SemanticsManager.swift */; };
+		6D0E53DA2C443FE400858CB8 /* SearchCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E53D22C443FE400858CB8 /* SearchCommand.swift */; };
+		6D0E53DB2C443FE400858CB8 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E53D32C443FE400858CB8 /* SearchResult.swift */; };
+		6D0E53DC2C443FE400858CB8 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E53D42C443FE400858CB8 /* Logging.swift */; };
+		6D0E53DD2C443FE400858CB8 /* IndexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E53D52C443FE400858CB8 /* IndexManager.swift */; };
+		6D0E53DE2C443FE400858CB8 /* Fragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E53D62C443FE400858CB8 /* Fragment.swift */; };
+		6D0E53E12C44403000858CB8 /* SimilaritySearchKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6D0E53E02C44403000858CB8 /* SimilaritySearchKit */; };
+		6D0E53E32C44403000858CB8 /* SimilaritySearchKitMiniLMAll in Frameworks */ = {isa = PBXBuildFile; productRef = 6D0E53E22C44403000858CB8 /* SimilaritySearchKitMiniLMAll */; };
+		6D0E53E62C44404200858CB8 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 6D0E53E52C44404200858CB8 /* ArgumentParser */; };
+		6D0E53E92C44519500858CB8 /* Chalk in Frameworks */ = {isa = PBXBuildFile; productRef = 6D0E53E82C44519500858CB8 /* Chalk */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D0E53B22C443F3B00858CB8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D0E53B42C443F3B00858CB8 /* natsearch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = natsearch; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0E53CE2C443FE300858CB8 /* natsearch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "natsearch-Bridging-Header.h"; sourceTree = "<group>"; };
+		6D0E53CF2C443FE400858CB8 /* WalkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkingManager.swift; sourceTree = "<group>"; };
+		6D0E53D02C443FE400858CB8 /* natsearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = natsearch.swift; sourceTree = "<group>"; };
+		6D0E53D12C443FE400858CB8 /* SemanticsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemanticsManager.swift; sourceTree = "<group>"; };
+		6D0E53D22C443FE400858CB8 /* SearchCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCommand.swift; sourceTree = "<group>"; };
+		6D0E53D32C443FE400858CB8 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		6D0E53D42C443FE400858CB8 /* Logging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		6D0E53D52C443FE400858CB8 /* IndexManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexManager.swift; sourceTree = "<group>"; };
+		6D0E53D62C443FE400858CB8 /* Fragment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fragment.swift; sourceTree = "<group>"; };
+		6D0E53EB2C445A0300858CB8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D0E53B12C443F3B00858CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0E53E92C44519500858CB8 /* Chalk in Frameworks */,
+				6D0E53E62C44404200858CB8 /* ArgumentParser in Frameworks */,
+				6D0E53E32C44403000858CB8 /* SimilaritySearchKitMiniLMAll in Frameworks */,
+				6D0E53E12C44403000858CB8 /* SimilaritySearchKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D0E53AB2C443F3B00858CB8 = {
+			isa = PBXGroup;
+			children = (
+				6D0E53EB2C445A0300858CB8 /* README.md */,
+				6D0E53B62C443F3B00858CB8 /* natsearch */,
+				6D0E53B52C443F3B00858CB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D0E53B52C443F3B00858CB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D0E53B42C443F3B00858CB8 /* natsearch */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D0E53B62C443F3B00858CB8 /* natsearch */ = {
+			isa = PBXGroup;
+			children = (
+				6D0E53D62C443FE400858CB8 /* Fragment.swift */,
+				6D0E53D52C443FE400858CB8 /* IndexManager.swift */,
+				6D0E53D42C443FE400858CB8 /* Logging.swift */,
+				6D0E53D02C443FE400858CB8 /* natsearch.swift */,
+				6D0E53D22C443FE400858CB8 /* SearchCommand.swift */,
+				6D0E53D32C443FE400858CB8 /* SearchResult.swift */,
+				6D0E53D12C443FE400858CB8 /* SemanticsManager.swift */,
+				6D0E53CF2C443FE400858CB8 /* WalkingManager.swift */,
+				6D0E53CE2C443FE300858CB8 /* natsearch-Bridging-Header.h */,
+			);
+			path = natsearch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D0E53B32C443F3B00858CB8 /* natsearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D0E53BB2C443F3C00858CB8 /* Build configuration list for PBXNativeTarget "natsearch" */;
+			buildPhases = (
+				6D0E53B02C443F3B00858CB8 /* Sources */,
+				6D0E53B12C443F3B00858CB8 /* Frameworks */,
+				6D0E53B22C443F3B00858CB8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = natsearch;
+			packageProductDependencies = (
+				6D0E53E02C44403000858CB8 /* SimilaritySearchKit */,
+				6D0E53E22C44403000858CB8 /* SimilaritySearchKitMiniLMAll */,
+				6D0E53E52C44404200858CB8 /* ArgumentParser */,
+				6D0E53E82C44519500858CB8 /* Chalk */,
+			);
+			productName = natsearch;
+			productReference = 6D0E53B42C443F3B00858CB8 /* natsearch */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D0E53AC2C443F3B00858CB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					6D0E53B32C443F3B00858CB8 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+				};
+			};
+			buildConfigurationList = 6D0E53AF2C443F3B00858CB8 /* Build configuration list for PBXProject "natsearch" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D0E53AB2C443F3B00858CB8;
+			packageReferences = (
+				6D0E53DF2C44403000858CB8 /* XCRemoteSwiftPackageReference "similarity-search-kit" */,
+				6D0E53E42C44404200858CB8 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				6D0E53E72C44519500858CB8 /* XCRemoteSwiftPackageReference "Chalk" */,
+			);
+			productRefGroup = 6D0E53B52C443F3B00858CB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D0E53B32C443F3B00858CB8 /* natsearch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D0E53B02C443F3B00858CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0E53D92C443FE400858CB8 /* SemanticsManager.swift in Sources */,
+				6D0E53DC2C443FE400858CB8 /* Logging.swift in Sources */,
+				6D0E53D82C443FE400858CB8 /* natsearch.swift in Sources */,
+				6D0E53DB2C443FE400858CB8 /* SearchResult.swift in Sources */,
+				6D0E53D72C443FE400858CB8 /* WalkingManager.swift in Sources */,
+				6D0E53DE2C443FE400858CB8 /* Fragment.swift in Sources */,
+				6D0E53DA2C443FE400858CB8 /* SearchCommand.swift in Sources */,
+				6D0E53DD2C443FE400858CB8 /* IndexManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6D0E53B92C443F3C00858CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D0E53BA2C443F3C00858CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		6D0E53BC2C443F3C00858CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DNFYV2TZ3T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "natsearch/natsearch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6D0E53BD2C443F3C00858CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DNFYV2TZ3T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "natsearch/natsearch-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D0E53AF2C443F3B00858CB8 /* Build configuration list for PBXProject "natsearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0E53B92C443F3C00858CB8 /* Debug */,
+				6D0E53BA2C443F3C00858CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D0E53BB2C443F3C00858CB8 /* Build configuration list for PBXNativeTarget "natsearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0E53BC2C443F3C00858CB8 /* Debug */,
+				6D0E53BD2C443F3C00858CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D0E53DF2C44403000858CB8 /* XCRemoteSwiftPackageReference "similarity-search-kit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ZachNagengast/similarity-search-kit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.15;
+			};
+		};
+		6D0E53E42C44404200858CB8 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+		6D0E53E72C44519500858CB8 /* XCRemoteSwiftPackageReference "Chalk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/Chalk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D0E53E02C44403000858CB8 /* SimilaritySearchKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D0E53DF2C44403000858CB8 /* XCRemoteSwiftPackageReference "similarity-search-kit" */;
+			productName = SimilaritySearchKit;
+		};
+		6D0E53E22C44403000858CB8 /* SimilaritySearchKitMiniLMAll */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D0E53DF2C44403000858CB8 /* XCRemoteSwiftPackageReference "similarity-search-kit" */;
+			productName = SimilaritySearchKitMiniLMAll;
+		};
+		6D0E53E52C44404200858CB8 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D0E53E42C44404200858CB8 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		6D0E53E82C44519500858CB8 /* Chalk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D0E53E72C44519500858CB8 /* XCRemoteSwiftPackageReference "Chalk" */;
+			productName = Chalk;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6D0E53AC2C443F3B00858CB8 /* Project object */;
+}
