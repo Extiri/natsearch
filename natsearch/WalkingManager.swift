@@ -71,8 +71,8 @@ class WalkingManager {
     
     var fragments = [Fragment]()
     
-    var currentBeginningLine = 0
-    var currentLine = 0
+    var currentBeginningLine = 1
+    var currentLine = 1
     var currentContent = ""
     
     for (i, char) in contents.enumerated() {

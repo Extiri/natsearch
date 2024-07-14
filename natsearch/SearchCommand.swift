@@ -12,23 +12,28 @@ extension natsearch {
   struct Search: AsyncParsableCommand {
     static let configuration = CommandConfiguration(abstract: "Search in the current directory.")
     
-    @Option(help: "Depth of search in current directory.")
+    @Option(name: [.long, .customShort("d")], help: "Depth of search in current directory.")
     var depth: Int = 3
     
-    @Option(help: "Number of code lines per fragment.")
-    var splitLength: Int = 3
+    @Option(name: [.long, .customShort("s")], help: "Number of code lines per fragment.")
+    var splitLength: Int = 5
     
-    @Option(help: "Number of results.")
+    @Option(name: [.long, .customShort("n")], help: "Number of results.")
     var resultsNumber: Int = 3
+    
+    @Flag(name: [.long], help: "Print output as JSON")
+    var json: Bool = false
     
     @Flag(name: [.long, .customShort("q")], help: "Hide info and notice logs.")
     var quiet = false
-
+    
     @Argument(help: "Query in natural language")
     var query: String
     
     mutating func run() async {
-     let indexManager = IndexManager()
+      QUIET_MODE = quiet
+      
+      let indexManager = IndexManager()
       let walkingManager = WalkingManager(indexManager: indexManager, splitLength: splitLength)
       
       do {
@@ -39,19 +44,32 @@ extension natsearch {
       
       let results = await indexManager.search(query: query, nResults: resultsNumber)
       
-      print("\n---\n")
-      
-      for (i, result) in results.enumerated() {
-        if i >= resultsNumber {
-          break
-        }
+      if json {
+        let jsonResults = results.map(JSONResult.fromResult)
+        let jsonEncoder = JSONEncoder()
         
-        print("\(i + 1). \(result.fragment.location())")
-        print("File path:")
-        print(result.fragment.fileURL.path)
-        print("Fragment content:")
-        print(result.fragment.content)
-        print("\n\n\n")
+        do {
+          let data = try jsonEncoder.encode(jsonResults)
+          let asString = String(data: data, encoding: .utf8)!
+          print(asString)
+        } catch {
+          log(error.localizedDescription, role: .error)
+        }
+      } else {
+        print("\n---------------------------------")
+        
+        for (i, result) in results.enumerated() {
+          if i >= resultsNumber {
+            break
+          }
+          
+          print("\(i + 1). \(result.fragment.location())")
+          print("File path:")
+          print("\(result.fragment.fileURL.path)\n")
+          print("Fragment content:")
+          print(result.fragment.content)
+          print("---------------------------------")
+        }
       }
     }
   }
