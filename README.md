@@ -19,7 +19,7 @@ natsearch works only on macOS 12 and up. To build, Xcode is required.
 First, clone this repository:
 ```git clone https://github.com/Extiri/natsearch```
 
-Then open natsearch.xcodeproj file in Xcode. Then run the project. Then go to Product > Show build folder in Finder and then Products > Debug. natsearch is the built executable. You can alias it in your shell and, if you want, add it to your shell config.
+Then open natsearch.xcodeproj file in Xcode. Then run the project. Then, using menu bar, go to Product > Show build folder in Finder and then Products > Debug. natsearch is the built executable. You can alias it in your shell and, if you want, add it to your shell config.
 
 ## Help
 Type ```natsearch --help``` or ```natsearch <command> --help``` to get help and options for specific command.
