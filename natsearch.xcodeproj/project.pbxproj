@@ -20,6 +20,7 @@
 		6D0E53E62C44404200858CB8 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 6D0E53E52C44404200858CB8 /* ArgumentParser */; };
 		6D0E53E92C44519500858CB8 /* Chalk in Frameworks */ = {isa = PBXBuildFile; productRef = 6D0E53E82C44519500858CB8 /* Chalk */; };
 		6D0E53ED2C445DEE00858CB8 /* JSONResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E53EC2C445DEE00858CB8 /* JSONResult.swift */; };
+		6D0E53EF2C45439800858CB8 /* EngineCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E53EE2C45439800858CB8 /* EngineCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		6D0E53D62C443FE400858CB8 /* Fragment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fragment.swift; sourceTree = "<group>"; };
 		6D0E53EB2C445A0300858CB8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6D0E53EC2C445DEE00858CB8 /* JSONResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONResult.swift; sourceTree = "<group>"; };
+		6D0E53EE2C45439800858CB8 /* EngineCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,18 +86,43 @@
 		6D0E53B62C443F3B00858CB8 /* natsearch */ = {
 			isa = PBXGroup;
 			children = (
-				6D0E53D62C443FE400858CB8 /* Fragment.swift */,
-				6D0E53D52C443FE400858CB8 /* IndexManager.swift */,
+				6D0E53F22C4543C200858CB8 /* Structures */,
+				6D0E53F02C45439F00858CB8 /* Commands */,
+				6D0E53F12C4543A500858CB8 /* Managers */,
 				6D0E53D42C443FE400858CB8 /* Logging.swift */,
 				6D0E53D02C443FE400858CB8 /* natsearch.swift */,
-				6D0E53EC2C445DEE00858CB8 /* JSONResult.swift */,
-				6D0E53D22C443FE400858CB8 /* SearchCommand.swift */,
-				6D0E53D32C443FE400858CB8 /* SearchResult.swift */,
-				6D0E53D12C443FE400858CB8 /* SemanticsManager.swift */,
-				6D0E53CF2C443FE400858CB8 /* WalkingManager.swift */,
 				6D0E53CE2C443FE300858CB8 /* natsearch-Bridging-Header.h */,
 			);
 			path = natsearch;
+			sourceTree = "<group>";
+		};
+		6D0E53F02C45439F00858CB8 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				6D0E53D22C443FE400858CB8 /* SearchCommand.swift */,
+				6D0E53EE2C45439800858CB8 /* EngineCommand.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		6D0E53F12C4543A500858CB8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6D0E53D52C443FE400858CB8 /* IndexManager.swift */,
+				6D0E53CF2C443FE400858CB8 /* WalkingManager.swift */,
+				6D0E53D12C443FE400858CB8 /* SemanticsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6D0E53F22C4543C200858CB8 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				6D0E53D62C443FE400858CB8 /* Fragment.swift */,
+				6D0E53D32C443FE400858CB8 /* SearchResult.swift */,
+				6D0E53EC2C445DEE00858CB8 /* JSONResult.swift */,
+			);
+			path = Structures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +200,7 @@
 				6D0E53D82C443FE400858CB8 /* natsearch.swift in Sources */,
 				6D0E53DB2C443FE400858CB8 /* SearchResult.swift in Sources */,
 				6D0E53D72C443FE400858CB8 /* WalkingManager.swift in Sources */,
+				6D0E53EF2C45439800858CB8 /* EngineCommand.swift in Sources */,
 				6D0E53DE2C443FE400858CB8 /* Fragment.swift in Sources */,
 				6D0E53ED2C445DEE00858CB8 /* JSONResult.swift in Sources */,
 				6D0E53DA2C443FE400858CB8 /* SearchCommand.swift in Sources */,

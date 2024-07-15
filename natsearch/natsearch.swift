@@ -13,7 +13,7 @@ var QUIET_MODE = false
 struct natsearch: AsyncParsableCommand {
   static let configuration = CommandConfiguration(
           abstract: "A utility for searching using natural language.",
-          subcommands: [Search.self],
+          subcommands: [Search.self, Engine.self],
           defaultSubcommand: Search.self)
 }
 
