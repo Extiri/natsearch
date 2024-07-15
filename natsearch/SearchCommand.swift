@@ -7,6 +7,7 @@
 
 import Foundation
 import ArgumentParser
+import Chalk
 
 extension natsearch {
   struct Search: AsyncParsableCommand {
@@ -56,17 +57,17 @@ extension natsearch {
           log(error.localizedDescription, role: .error)
         }
       } else {
-        print("\n---------------------------------")
+        print("Results:\n---------------------------------")
         
         for (i, result) in results.enumerated() {
           if i >= resultsNumber {
             break
           }
           
-          print("\(i + 1). \(result.fragment.location())")
-          print("File path:")
+          print("\(i + 1). \(result.fragment.location(), color: .green)")
+          print("\("File path", color: .yellow)")
           print("\(result.fragment.fileURL.path)\n")
-          print("Fragment content:")
+          print("\("Fragment content", color: .yellow)")
           print(result.fragment.content)
           print("---------------------------------")
         }
